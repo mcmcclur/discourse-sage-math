@@ -4,7 +4,9 @@ export default apiInitializer("0.14.1", api => {
   if (!window.__resizeDone) {
     window.addEventListener("message", (ev) => {
       const data = ev.data || {};
-      if (!data.__sagecellHeight || !data.__sagecellId) return;
+      if (!data.__sagecellHeight || !data.__sagecellId) {
+        return;
+      }
       const iframe = document.querySelector(
         `iframe[data-sagecell-id="${data.__sagecellId}"]`
       );
@@ -22,10 +24,9 @@ export default apiInitializer("0.14.1", api => {
   api.decorateCookedElement((cooked) => {
     const blocks = cooked.querySelectorAll('pre code.lang-sage, pre code.language-sage');
     blocks.forEach((codeblock, idx) => {
-      console.log(['codeblock is', codeblock])
       const code = codeblock.textContent;
       const pre = codeblock.closest("pre");
-      if (!pre) return;
+      if (!pre) { return; }
       const nonce = getParentNonce();
       const id = "sagecell-" + Math.random().toString(36).slice(2) + "-" + idx;
       const srcdoc = `<!DOCTYPE html>
@@ -152,8 +153,8 @@ export default apiInitializer("0.14.1", api => {
 
 function getParentNonce() {
   const s = document.querySelector("script[nonce]");
-  if (s && s.nonce) return s.nonce;
+  if (s && s.nonce) { return s.nonce; }
   const m = document.querySelector('meta[name="csp-nonce"]');
-  if (m && m.content) return m.content;
+  if (m && m.content) { return m.content; }
   return "";
 }
