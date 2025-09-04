@@ -1,6 +1,5 @@
 en:
   theme_metadata:
-    description: Reinterprets sagecell fenced code blocks ass active SageCell Server
-      Embeds.
+    description: Reinterprets sagecell fenced code blocks as active SageCell Server embeds.
     settings:
       example_setting: A description of a setting.
