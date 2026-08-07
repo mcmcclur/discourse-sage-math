@@ -6,4 +6,7 @@ en:
           discourse_sage_math: "Discourse Sage Math"
   js:
     discourse_sage_math:
-      placeholder: placeholder
+      title: "SageMath"
+      run: "Run"
+      loading: "Loading SageCell..."
+      load_error: "Unable to load SageCell."

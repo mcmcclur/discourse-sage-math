@@ -1,4 +1,4 @@
 discourse_sage_math:
   discourse_sage_math_enabled:
-    default: false
+    default: true
     client: true

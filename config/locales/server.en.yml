@@ -1,1 +1,3 @@
 en:
+  site_settings:
+    discourse_sage_math_enabled: "Render SageMath fenced code blocks as Sage cells."

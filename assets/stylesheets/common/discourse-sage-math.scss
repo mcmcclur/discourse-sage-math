@@ -1,0 +1,137 @@
+.discourse-sage-math {
+  margin: 1em 0;
+  border: 1px solid var(--primary-low);
+  background: var(--secondary);
+}
+
+.discourse-sage-math__header {
+  display: flex;
+  align-items: center;
+  min-height: 2.25em;
+  padding: 0 0.75em;
+  border-bottom: 1px solid var(--primary-low);
+  background: var(--primary-very-low);
+}
+
+.discourse-sage-math__title {
+  color: var(--primary-high);
+  font-size: var(--font-down-1);
+  font-weight: 600;
+}
+
+.discourse-sage-math__source {
+  display: none;
+}
+
+.discourse-sage-math__output {
+  min-height: 2.75em;
+  padding: 0.75em;
+}
+
+.discourse-sage-math__message {
+  color: var(--primary-medium);
+}
+
+.discourse-sage-math__output[data-sage-math-state="error"]
+  .discourse-sage-math__message {
+  color: var(--danger);
+}
+
+.discourse-sage-math {
+  .sagecell_permalink,
+  .sagecell_fullScreen {
+    display: none !important;
+  }
+
+  .sagecell,
+  .sagecell_sessionOutput,
+  .sagecell_output,
+  .sagecell_output_elements {
+    background: var(--secondary) !important;
+    color: var(--primary) !important;
+  }
+
+  .sagecell_editor,
+  .sagecell_commands {
+    background: var(--primary-very-low) !important;
+  }
+
+  .sagecell_editor {
+    border: 1px solid var(--primary-low) !important;
+  }
+
+  .CodeMirror,
+  .CodeMirror-scroll,
+  .CodeMirror-sizer,
+  .CodeMirror-lines,
+  .CodeMirror-line,
+  .CodeMirror-code,
+  .CodeMirror pre,
+  textarea {
+    background: var(--secondary) !important;
+    color: var(--primary) !important;
+  }
+
+  .CodeMirror-gutters {
+    border-right-color: var(--primary-low) !important;
+    background: var(--primary-very-low) !important;
+  }
+
+  .CodeMirror-linenumber {
+    color: var(--primary-medium) !important;
+  }
+
+  .CodeMirror-cursor {
+    border-left-color: var(--primary) !important;
+  }
+
+  .CodeMirror-selected,
+  .CodeMirror-focused .CodeMirror-selected {
+    background: var(--tertiary-low) !important;
+  }
+
+  .CodeMirror-matchingbracket {
+    color: var(--success) !important;
+  }
+
+  .CodeMirror-nonmatchingbracket,
+  .cm-error {
+    color: var(--danger) !important;
+  }
+
+  .cm-comment,
+  .cm-meta,
+  .cm-quote {
+    color: var(--primary-medium) !important;
+  }
+
+  .cm-keyword,
+  .cm-builtin,
+  .cm-atom {
+    color: var(--tertiary) !important;
+  }
+
+  .cm-string,
+  .cm-string-2 {
+    color: var(--success) !important;
+  }
+
+  .cm-number,
+  .cm-variable-2,
+  .cm-variable-3 {
+    color: var(--highlight) !important;
+  }
+
+  .cm-def,
+  .cm-variable,
+  .cm-property,
+  .cm-operator,
+  .cm-bracket {
+    color: var(--primary) !important;
+  }
+
+  .sagecell_output_elements pre,
+  .sagecell_output_elements code {
+    color: var(--primary) !important;
+  }
+}
