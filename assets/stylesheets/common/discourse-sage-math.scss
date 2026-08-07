@@ -116,14 +116,14 @@
     color: var(--success) !important;
   }
 
-  .cm-number,
-  .cm-variable-2,
-  .cm-variable-3 {
-    color: var(--highlight) !important;
+  .cm-number {
+    color: var(--tertiary) !important;
   }
 
   .cm-def,
   .cm-variable,
+  .cm-variable-2,
+  .cm-variable-3,
   .cm-property,
   .cm-operator,
   .cm-bracket {
