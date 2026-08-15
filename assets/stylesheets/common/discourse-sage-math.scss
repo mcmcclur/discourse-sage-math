@@ -63,12 +63,16 @@
   .CodeMirror,
   .CodeMirror-scroll,
   .CodeMirror-sizer,
+  textarea {
+    background: var(--secondary) !important;
+    color: var(--primary) !important;
+  }
+
   .CodeMirror-lines,
   .CodeMirror-line,
   .CodeMirror-code,
-  .CodeMirror pre,
-  textarea {
-    background: var(--secondary) !important;
+  .CodeMirror pre {
+    background: transparent !important;
     color: var(--primary) !important;
   }
 
